@@ -2,9 +2,9 @@ FROM gitpod/workspace-full-vnc
                     
 USER gitpod
 RUN sudo apt-get -q update && \
-    sudo apt-get install -yq python3-tk
+    sudo apt-get install -yq python3-tk vim-gtk python-opengl ffmpeg
     # sudo apt-get install -yq python-opengl ffmpeg && \
-    # sudo rm -rf /var/lib/apt/lists/*
+    sudo rm -rf /var/lib/apt/lists/*
 
 # Install custom tools, runtime, etc. using apt-get
 # For example, the command below would install "bastet" - a command line tetris clone:
